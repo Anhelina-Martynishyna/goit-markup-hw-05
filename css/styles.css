@@ -532,7 +532,7 @@ img {
   fill: #f4f4fd;
 }
 .container-subscribe {
-  padding-left: 80px;
+  margin-left: 80px;
 }
 .form-text {
   margin-bottom: 16px;
@@ -579,6 +579,11 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-send {
   margin-left: 16px;
@@ -641,10 +646,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal:hover .cross-button,
-.modal:focus .cross-button {
+.cross-button:hover,
+.cross-button:focus {
   background-color: #404bbf;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cross-button .icon-vector {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -653,6 +659,7 @@ img {
 .cross-button:hover .icon-vector,
 .cross-button:focus .icon-vector {
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   padding: 72px 24px 24px 24px;
@@ -729,12 +736,19 @@ img {
 }
 .privacy-wrapper {
   margin-bottom: 24px;
+  display: flex;
 }
 .label-form {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--text-color, #8e8f99);
+  gap: 8px;
+}
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .policy {
   width: 16px;
@@ -750,7 +764,7 @@ img {
   fill: transparent;
 }
 
-.checkbox-privacy:checked + .label-form > .policy {
+.checkbox-privacy:checked + .label-form .policy {
   background-color: #404bbf;
   border: none;
   fill: var(--icon-color, #f4f4fd);
@@ -758,6 +772,10 @@ img {
 
 .policy-link {
   color: #4d5ae5;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 .button-send {
   display: block;
@@ -775,5 +793,10 @@ img {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:hover,
+.button-send:focus {
+  background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
