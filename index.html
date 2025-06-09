@@ -513,7 +513,7 @@
             <label class="form-label" for="user-phone">Phone</label>
             <div class="input-wrapper">
               <input
-                class="input-form"
+                class="form-input"
                 id="user-phone"
                 name="user-phone"
                 type="text"
@@ -528,7 +528,7 @@
             <label class="form-label" for="user-email">Email</label>
             <div class="input-wrapper">
               <input
-                class="input-form"
+                class="form-input"
                 id="user-email"
                 name="user-email"
                 type="text"
@@ -540,7 +540,7 @@
           </div>
 
           <div class="container-comment">
-            <label class="label-form" for="user-comment"> Comment</label>
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="comment-area"
               id="user-comment"
@@ -548,25 +548,25 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="container-privacy">
+          <div class="privacy-wrapper">
             <input
               class="checkbox-privacy visually-hidden"
               id="user-privacy"
               type="checkbox"
               value="true"
               name="user-privacy"
-              checked
               required
             />
             <label class="label-form" for="user-privacy"
               >I accept the terms and conditions of the</label
             >
             <span class="policy">
-              <svg class="icon-check" width="10" height="8">
+              <svg class="check" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            <span class="policy-form">Privacy Policy </span>
+            <label>
+              <a class="policy-link" href="#">Privacy Policy </label>
             <button class="button-send">Send</button>
           </div>
         </form>
