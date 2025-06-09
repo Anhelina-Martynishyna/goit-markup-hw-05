@@ -750,7 +750,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.policy {
+.custom-checkbox .policy {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -764,7 +764,7 @@ img {
   fill: transparent;
 }
 
-.checkbox-privacy:checked + .label-form .policy {
+.checkbox-privacy:checked + .label-form .custom-checkbox .policy {
   background-color: #404bbf;
   border: none;
   fill: var(--icon-color, #f4f4fd);
